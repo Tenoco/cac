@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #007aff;
+    --secondary-color: #5856d6;
+    --pink-color: #ff69b4;
+    --bg-color: #f2f2f7;
+    --text-color: #000000;
+    --card-bg-light: #ffffff;
+    --card-bg-dark: #1c1c1e;
+    --card-text-light: #000000;
+    --card-text-dark: #ffffff;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(45deg, var(--primary-color), var(--pink-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.motto {
+    font-size: 1.2rem;
+    color: var(--pink-color);
+    margin-top: 0;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 12px 20px;
+    display: inline-block;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: rgba(255, 105, 180, 0.1);
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.light {
+    background-color: var(--card-bg-light);
+    color: var(--card-text-light);
+}
+
+.dark {
+    background-color: var(--card-bg-dark);
+    color: var(--card-text-dark);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: var(--pink-color);
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: var(--pink-color);
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+.pink-platelet {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: var(--pink-color);
+    opacity: 0.1;
+    border-radius: 50%;
+    bottom: -30px;
+    right: -30px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #000000;
+        --text-color: #ffffff;
+    }
+    
+    nav {
+        background-color: rgba(28, 28, 30, 0.8);
+    }
+    
+    nav ul li a:hover, nav ul li a.active {
+        background-color: rgba(255, 105, 180, 0.2);
+    }
+    
+    .pink-platelet {
+        opacity: 0.2;
+    }
+}
