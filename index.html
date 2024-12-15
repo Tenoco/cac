@@ -4,49 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christ Ambassadors' College</title>
-    <meta name="description" content="Christ Ambassadors' College - Excellence with Integrity. A college for students to grow academically, socially, and Christly in Kaduna, Nigeria.">
-    <meta name="keywords" content="Christ Ambassadors' College, education, Kaduna, integrity, excellence">
-    <meta property="og:image" content="icon.webp">
-    <link rel="icon" href="icon.webp" type="image/webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Christ Ambassadors' College</h1>
-            <p class="motto">Excellence with Integrity</p>
+    <div class="app-container">
+        <header class="main-header">
+            <div class="header-content">
+                <img src="icon.webp" alt="CAC Logo" class="logo animate-float">
+                <div class="header-text">
+                    <h1>Christ Ambassadors' College</h1>
+                    <p class="tagline">Empowering Minds, Transforming Lives</p>
+                </div>
+            </div>
         </header>
-        <nav>
-            <ul>
-                <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
+
+        <nav class="main-navigation">
+            <div class="nav-wrapper">
+                <a href="#home" class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-item">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About</span>
+                </a>
+                <a href="#academics" class="nav-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Academics</span>
+                </a>
+                <a href="#admissions" class="nav-item">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Admissions</span>
+                </a>
+                <a href="#contact" class="nav-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
         </nav>
-        <main>
-            <section id="home" class="card light">
-                <h2>Welcome</h2>
-                <p>Empowering students to grow academically, socially, and Christly.</p>
-                <div class="pink-platelet"></div>
+
+        <main class="main-content">
+            <section id="home" class="card-grid">
+                <div class="card welcome-card animate-slide-in">
+                    <div class="card-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h2>Welcome to CAC</h2>
+                    <p>A beacon of academic excellence and spiritual growth in Kaduna.</p>
+                </div>
+
+                <div class="card mission-card animate-slide-in">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h2>Our Mission</h2>
+                    <p>Nurturing holistic development through quality education and Christian values.</p>
+                </div>
             </section>
-            <section id="about" class="card dark">
-                <h2>About Us</h2>
-                <p>Christ Ambassadors' College is dedicated to nurturing students in their academic, social, and spiritual growth. Our mission is to create an environment where students can excel in their studies while developing strong Christian values.</p>
-                <div class="pink-platelet"></div>
+
+            <section id="about" class="card-grid">
+                <div class="card history-card animate-slide-in">
+                    <div class="card-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h2>Our History</h2>
+                    <p>Founded with a vision to provide top-tier Christian education in Kaduna.</p>
+                </div>
+
+                <div class="card vision-card animate-slide-in">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h2>Our Vision</h2>
+                    <p>To be a leading Christian educational institution that produces world-class leaders.</p>
+                </div>
             </section>
-            <section id="contact" class="card light">
-                <h2>Contact Us</h2>
-                <p><i class="fas fa-map-marker-alt"></i> Juji road, Tsaunin Kura</p>
-                <p><i class="fas fa-envelope"></i> info@cac-edu.org</p>
-                <p><i class="fas fa-phone"></i> +234 802 082 6242</p>
-                <div class="pink-platelet"></div>
+
+            <section id="academics" class="card-grid">
+                <div class="card program-card animate-slide-in">
+                    <div class="card-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h2>Academic Programs</h2>
+                    <ul>
+                        <li>Science Stream</li>
+                        <li>Arts Stream</li>
+                        <li>Commercial Stream</li>
+                    </ul>
+                </div>
+
+                <div class="card facilities-card animate-slide-in">
+                    <div class="card-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h2>Modern Facilities</h2>
+                    <p>State-of-the-art laboratories, libraries, and digital learning spaces.</p>
+                </div>
+            </section>
+
+            <section id="admissions" class="card-grid">
+                <div class="card requirements-card animate-slide-in">
+                    <div class="card-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h2>Admission Requirements</h2>
+                    <ul>
+                        <li>Excellent academic record</li>
+                        <li>Entrance examination</li>
+                        <li>Personal interview</li>
+                    </ul>
+                </div>
+
+                <div class="card process-card animate-slide-in">
+                    <div class="card-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h2>Application Process</h2>
+                    <p>Simple, transparent, and student-friendly admission process.</p>
+                </div>
+            </section>
+
+            <section id="contact" class="card-grid">
+                <div class="card contact-info-card animate-slide-in">
+                    <div class="card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h2>Contact Details</h2>
+                    <p>Juji Road, Tsaunin Kura</p>
+                    <p>Kaduna, Nigeria</p>
+                    <p>+234 802 082 6242</p>
+                </div>
+
+                <div class="card social-card animate-slide-in">
+                    <div class="card-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h2>Connect With Us</h2>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
             </section>
         </main>
-        <footer>
-            <div class="social-icons">
-                <a href="https://m.facebook.com/profile.php?id=100063629394633" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.google.com/search?q=Christ%20Ambassadors%20College%20International&ludocid=14337355061563127927&ibp=gwp;0,7&sa=X&ved=2ahUKEwjmwtbmtoiJAxX4m_0HHeawAHoQ_coHegQIKBAB&sxsrf=ADLYWILnnlEguxXyE_lBJmMV0rQIGf6D0A:1728721867620#lpg=cid:CgIgAQ%3D%3D" aria-label="Google Maps"><i class="fas fa-map-marked-alt"></i></a>
+
+        <footer class="main-footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Christ Ambassadors' College. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </footer>
     </div>
